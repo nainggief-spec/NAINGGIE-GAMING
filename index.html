@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Gaming Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Floating Icons -->
+    <div class="floating-icon icon-1">🎮</div>
+    <div class="floating-icon icon-2">🎯</div>
+    <div class="floating-icon icon-3">⚡</div>
+    <div class="floating-icon icon-4">🔥</div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">NAINGGIE GAMES</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#tournaments">Tournaments</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="LEVEL UP YOUR GAMING">LEVEL UP YOUR GAMING</h1>
+            <p>Join millions of players worldwide in epic adventures</p>
+            <a href="#games" class="cta-button">
+                <span>PLAY NOW</span>
+            </a>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="2500000">0</span>
+                    <span class="stat-label">Players Online</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="150">0</span>
+                    <span class="stat-label">Games Available</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="1000000">0</span>
+                    <span class="stat-label">Matches Today</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="games-section" id="games">
+        <h2 class="section-title">Featured Games</h2>
+        <div class="games-grid" id="gamesGrid">
+            <div class="game-card" data-game="space">
+                <div class="game-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <span class="game-icon">🎮</span>
+                    <div class="game-overlay">
+                        <span class="play-icon">▶</span>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <div class="game-header">
+                        <h3>Space Warriors</h3>
+                        <span class="rating">⭐ 4.8</span>
+                    </div>
+                    <p>Epic space battles await! Command your fleet and conquer the galaxy.</p>
+                    <div class="game-meta">
+                        <span class="players">👥 50K+</span>
+                        <span class="genre">Action</span>
+                    </div>
+                    <a href="#" class="play-btn">PLAY NOW</a>
+                </div>
+            </div>
+
+            <div class="game-card" data-game="medieval">
+                <div class="game-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <span class="game-icon">⚔️</span>
+                    <div class="game-overlay">
+                        <span class="play-icon">▶</span>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <div class="game-header">
+                        <h3>Medieval Legends</h3>
+                        <span class="rating">⭐ 4.9</span>
+                    </div>
+                    <p>Build kingdoms, forge alliances, and become a legendary ruler.</p>
+                    <div class="game-meta">
+                        <span class="players">👥 100K+</span>
+                        <span class="genre">Strategy</span>
+                    </div>
+                    <a href="#" class="play-btn">PLAY NOW</a>
+                </div>
+            </div>
+
+            <div class="game-card" data-game="racing">
+                <div class="game-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <span class="game-icon">🏎️</span>
+                    <div class="game-overlay">
+                        <span class="play-icon">▶</span>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <div class="game-header">
+                        <h3>Turbo Racers</h3>
+                        <span class="rating">⭐ 4.7</span>
+                    </div>
+                    <p>High-speed racing action with stunning graphics and intense competition.</p>
+                    <div class="game-meta">
+                        <span class="players">👥 75K+</span>
+                        <span class="genre">Racing</span>
+                    </div>
+                    <a href="#" class="play-btn">PLAY NOW</a>
+                </div>
+            </div>
+
+            <div class="game-card" data-game="mystic">
+                <div class="game-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                    <span class="game-icon">🧙</span>
+                    <div class="game-overlay">
+                        <span class="play-icon">▶</span>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <div class="game-header">
+                        <h3>Mystic Realm</h3>
+                        <span class="rating">⭐ 4.6</span>
+                    </div>
+                    <p>Master powerful spells and explore a world of magic and mystery.</p>
+                    <div class="game-meta">
+                        <span class="players">👥 60K+</span>
+                        <span class="genre">RPG</span>
+                    </div>
+                    <a href="#" class="play-btn">PLAY NOW</a>
+                </div>
+            </div>
+
+            <div class="game-card" data-game="cyber">
+                <div class="game-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                    <span class="game-icon">🤖</span>
+                    <div class="game-overlay">
+                        <span class="play-icon">▶</span>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <div class="game-header">
+                        <h3>Cyber Strike</h3>
+                        <span class="rating">⭐ 4.9</span>
+                    </div>
+                    <p>Futuristic warfare in a cyberpunk world. Choose your side wisely.</p>
+                    <div class="game-meta">
+                        <span class="players">👥 120K+</span>
+                        <span class="genre">FPS</span>
+                    </div>
+                    <a href="#" class="play-btn">PLAY NOW</a>
+                </div>
+            </div>
+
+            <div class="game-card" data-game="castle">
+                <div class="game-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                    <span class="game-icon">🏰</span>
+                    <div class="game-overlay">
+                        <span class="play-icon">▶</span>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <div class="game-header">
+                        <h3>Castle Defense</h3>
+                        <span class="rating">⭐ 4.5</span>
+                    </div>
+                    <p>Defend your fortress against endless waves of enemies.</p>
+                    <div class="game-meta">
+                        <span class="players">👥 45K+</span>
+                        <span class="genre">Tower Defense</span>
+                    </div>
+                    <a href="#" class="play-btn">PLAY NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournaments Section -->
+    <section class="tournaments-section" id="tournaments">
+        <h2 class="section-title">Live Tournaments</h2>
+        <div class="tournaments-container">
+            <div class="tournament-card">
+                <div class="tournament-badge">LIVE</div>
+                <h3>Summer Championship</h3>
+                <p class="prize">💰 Prize Pool: $100,000</p>
+                <p class="participants">🎮 1,234 Players Competing</p>
+                <div class="tournament-timer" data-end="2026-03-10">
+                    <span class="timer-item"><span id="days">5</span><small>Days</small></span>
+                    <span class="timer-item"><span id="hours">12</span><small>Hours</small></span>
+                    <span class="timer-item"><span id="minutes">34</span><small>Mins</small></span>
+                    <span class="timer-item"><span id="seconds">56</span><small>Secs</small></span>
+                </div>
+                <button class="join-btn">JOIN NOW</button>
+            </div>
+
+            <div class="tournament-card">
+                <div class="tournament-badge upcoming">UPCOMING</div>
+                <h3>Pro League Season 5</h3>
+                <p class="prize">💰 Prize Pool: $250,000</p>
+                <p class="participants">🎮 Registration Open</p>
+                <div class="tournament-date">Starts March 15, 2026</div>
+                <button class="join-btn">REGISTER</button>
+            </div>
+
+            <div class="tournament-card">
+                <div class="tournament-badge upcoming">UPCOMING</div>
+                <h3>Weekend Warriors</h3>
+                <p class="prize">💰 Prize Pool: $50,000</p>
+                <p class="participants">🎮 Open for All</p>
+                <div class="tournament-date">Every Weekend</div>
+                <button class="join-btn">LEARN MORE</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section class="leaderboard-section" id="leaderboard">
+        <h2 class="section-title">Top Players</h2>
+        <div class="leaderboard">
+            <div class="leaderboard-item rank-1">
+                <span class="rank">🥇</span>
+                <span class="player-name">DragonSlayer</span>
+                <span class="score">125,450 pts</span>
+            </div>
+            <div class="leaderboard-item rank-2">
+                <span class="rank">🥈</span>
+                <span class="player-name">NinjaWarrior</span>
+                <span class="score">118,320 pts</span>
+            </div>
+            <div class="leaderboard-item rank-3">
+                <span class="rank">🥉</span>
+                <span class="player-name">PhoenixRising</span>
+                <span class="score">112,890 pts</span>
+            </div>
+            <div class="leaderboard-item">
+                <span class="rank">4</span>
+                <span class="player-name">ShadowHunter</span>
+                <span class="score">105,670 pts</span>
+            </div>
+            <div class="leaderboard-item">
+                <span class="rank">5</span>
+                <span class="player-name">CosmicGamer</span>
+                <span class="score">98,450 pts</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>EPIC GAMES</h3>
+                <p>Your ultimate gaming destination</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#tournaments">Tournaments</a></li>
+                    <li><a href="#community">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#">Discord</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Epic Gaming Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
